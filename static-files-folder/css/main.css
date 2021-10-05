@@ -1,0 +1,138 @@
+ html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Jaldi', sans-serif;
+  background-image: url("../images/bg.jpg");
+  background-color: #cccccc;
+
+  background-size:120vmax;
+  background-repeat: round;
+  background-repeat: no-repeat;
+}
+
+body {
+  min-height: 100px;
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 5vh;
+  background-color: black;
+}
+
+h2.rgb:hover {
+  background-color: white;
+}
+
+/* RGB colors animation */
+.rgb {
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  50% {
+    color: #f65151;
+  }
+
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+
+
+/* Main body */
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  height: 90vmax;
+  background-color:rgb(0, 0, 0, 0.60);
+  overflow:hidden;
+}
+
+.main .welcome {
+  font-size: 10vh;
+  color:white;
+  margin-bottom: 105vh;
+}
+
+.mission_div {
+  text-align: center;
+  position: absolute;
+  top: 45vmax;
+}
+.mission_div .mission{
+  font-size:5vh;
+  color:white;
+  margin-left: 42vmax;
+}
+.mission_div a {
+  text-decoration: none;
+}
+
+/* Nav Bar */
+.nav_div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+.nav_div li {
+  float: left;
+}
+
+.nav_div li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav_div .active {
+  background-color: #f65151;
+  padding-right: 1vmax;
+  color: rgb(255, 255, 255);
+  font-size: 2vh;
+  font-weight: bolder;
+}
+
+.nav_div {
+  overflow: hidden;
+  background-color: #333;
+  opacity: 95%;
+}
+
+.nav_div a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 60px 20px;
+  text-decoration: none;
+  font-size: 1.5vh;
+}
+
+.nav_div a[class="pages"] {
+    margin-left:12vmax;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.nav_div a[class="pages"]:hover {
+  font-style: italic;
+  color:  #f65151;
+}
+
